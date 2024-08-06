@@ -72,16 +72,16 @@ if (isNaN(start) || isNaN(end)) {
 
 //min 4
 alert(`Дізнаємось спільний дільник!`);
-let a = Number(prompt(`Введіть число`));
-let b = Number(prompt(`Введіть друге число`));
+let num1 = Number(prompt(`Введіть число`));
+let num2 = Number(prompt(`Введіть друге число`));
 
-while (b != 0) {
-    let r = a % b;
-    a = b;
-    b = r;
+while (num2 != 0) {
+    let remainder = num1 % num2;
+    num1 = num2;
+    num2 = remainder;
 }
 
-alert(`Найбільший спільний дільник початкових чисел є ${a}`);
+alert(`Найбільший спільний дільник початкових чисел є ${num1}`);
 
 //min-5
 alert(`Дізнаємось дільник числа!`);
