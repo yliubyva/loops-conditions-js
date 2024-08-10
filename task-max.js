@@ -4,17 +4,17 @@
 alert(`Загадай число від 0 до 100`);
 let min = 0;
 let max = 100;
-let N;
+let riddledNum;
 let found = false;
 
 while (!found) {
-    N = Math.floor((min + max) / 2);
-    if ( confirm(`Ваше число > ${N}?`) ) {
-        min = N;
-    } else if ( confirm(`Ваше число < ${N}?`) ) {
-        max = N;
+    riddledNum = Math.floor((min + max) / 2);
+    if ( confirm(`Ваше число > ${riddledNum}?`) ) {
+        min = riddledNum;
+    } else if ( confirm(`Ваше число < ${riddledNum}?`) ) {
+        max = riddledNum;
     } else {
-        alert(`Тоді ваше загадане число = ${N}!`);
+        alert(`Тоді ваше загадане число = ${riddledNum}!`);
         found = true;
     }
 }
